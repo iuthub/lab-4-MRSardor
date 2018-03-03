@@ -6,6 +6,14 @@
 <link rel="stylesheet" type="text/css" href="sucker.css">
 </head>
 <body>
+<?php 
+if($_REQUEST["name"]==""||$_REQUEST["section"]==""||$_REQUEST["creditcard"]==""||$_REQUEST["cc"]=="")
+{
+?>
+<h1>Sorry</h1>
+<p>You didn't fill out the form completely.<a href="buyagrade.html">Try again?</a> </p>	
+<?php  } else{?>
+
 <h1>Thanks, sucker!</h1>
 <p>Your information has been recorded.</p>
 	<dl>
@@ -23,5 +31,6 @@ file_put_contents("suckers.txt", $input, FILE_APPEND);
 $input=file_get_contents("suckers.txt");
  ?>
 <pre><?= $input ?></pre>
+<?php } ?>
 </body>
 </html>
