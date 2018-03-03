@@ -1,5 +1,6 @@
-html {
-    background-color: #39275B;
+html
+{
+	background-color:  #39275B
 }
 
 body {
@@ -9,13 +10,9 @@ body {
     border: 10px #D8C858 solid;
     padding: 0.5em;
 }
-
-hr {
-    width: 90%;
-    border: 1px solid #D8C858;
-}
-
 h1, h2 {
     font-family: sans-serif;
     text-align: center;
 }
+
+
